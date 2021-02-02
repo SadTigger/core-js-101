@@ -8,10 +8,10 @@ describe('02-numbers-tasks', () => {
     assert.equal(tasks.getRectangleArea(5, 5), 25);
   });
 
-  it.optional('getCicleCircumference should return a circumference of cicle', () => {
-    assert.equal(tasks.getCicleCircumference(5), 31.41592653589793);
-    assert.equal(tasks.getCicleCircumference(3.14), 19.729201864543903);
-    assert.equal(tasks.getCicleCircumference(0), 0);
+  it.optional('getCircleCircumference should return a circumference of cicle', () => {
+    assert.equal(tasks.getCircleCircumference(5), 31.41592653589793);
+    assert.equal(tasks.getCircleCircumference(3.14), 19.729201864543903);
+    assert.equal(tasks.getCircleCircumference(0), 0);
   });
 
   it.optional('getAverage should return an average of two numbers', () => {
