@@ -1,6 +1,6 @@
 /* *******************************************************************************************
  *                                                                                           *
- * Plese read the following tutorial before implementing tasks:                              *
+ * Please read the following tutorial before implementing tasks:                              *
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String   *
  *                                                                                           *
  ******************************************************************************************* */
@@ -305,15 +305,17 @@ function encodeToRot13(str) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(/* value */) {
-  throw new Error('Not implemented');
+function isString(value) {
+  if (value !== null && typeof value === 'object' && typeof value[0] === 'string') return true;
+  if (typeof value === 'string') return true;
+  return false;
 }
 
 
 /**
  * Returns playid card id.
  *
- * Playing cards inittial deck inclides the cards in the following order:
+ * Playing cards initial deck includes the cards in the following order:
  *
  *  'A♣','2♣','3♣','4♣','5♣','6♣','7♣','8♣','9♣','10♣','J♣','Q♣','K♣',
  *  'A♦','2♦','3♦','4♦','5♦','6♦','7♦','8♦','9♦','10♦','J♦','Q♦','K♦',
@@ -334,8 +336,62 @@ function isString(/* value */) {
  *   'Q♠' => 50
  *   'K♠' => 51
  */
-function getCardId(/* value */) {
-  throw new Error('Not implemented');
+function getCardId(value) {
+  const cards = {
+    'A♣': '0',
+    '2♣': '1',
+    '3♣': '2',
+    '4♣': '3',
+    '5♣': '4',
+    '6♣': '5',
+    '7♣': '6',
+    '8♣': '7',
+    '9♣': '8',
+    '10♣': '9',
+    'J♣': '10',
+    'Q♣': '11',
+    'K♣': '12',
+    'A♦': '13',
+    '2♦': '14',
+    '3♦': '15',
+    '4♦': '16',
+    '5♦': '17',
+    '6♦': '18',
+    '7♦': '19',
+    '8♦': '20',
+    '9♦': '21',
+    '10♦': '22',
+    'J♦': '23',
+    'Q♦': '24',
+    'K♦': '25',
+    'A♥': '26',
+    '2♥': '27',
+    '3♥': '28',
+    '4♥': '29',
+    '5♥': '30',
+    '6♥': '31',
+    '7♥': '32',
+    '8♥': '33',
+    '9♥': '34',
+    '10♥': '35',
+    'J♥': '36',
+    'Q♥': '37',
+    'K♥': '38',
+    'A♠': '39',
+    '2♠': '40',
+    '3♠': '41',
+    '4♠': '42',
+    '5♠': '43',
+    '6♠': '44',
+    '7♠': '45',
+    '8♠': '46',
+    '9♠': '47',
+    '10♠': '48',
+    'J♠': '49',
+    'Q♠': '50',
+    'K♠': '51',
+  };
+  return cards[value];
 }
 
 
