@@ -19,8 +19,8 @@
  *   5, 10 => 50
  *   5, 5  => 25
  */
-function getRectangleArea(/* width, height */) {
-  throw new Error('Not implemented');
+function getRectangleArea(width, height) {
+  return width * height;
 }
 
 
@@ -35,7 +35,7 @@ function getRectangleArea(/* width, height */) {
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCicleCircumference(/* radius */) {
+function getCircleCircumference(/* radius */) {
   throw new Error('Not implemented');
 }
 
@@ -225,7 +225,7 @@ function toNumber(/* value, def */) {
 
 module.exports = {
   getRectangleArea,
-  getCicleCircumference,
+  getCircleCircumference,
   getAverage,
   getDistanceBetweenPoints,
   getLinearEquationRoot,
