@@ -20,8 +20,9 @@
  *    ['Array', 'Number', 'string'], 'Date'    => -1
  *    [0, 1, 2, 3, 4, 5], 5    => 5
  */
-function findElement(/* arr, value */) {
-  throw new Error('Not implemented');
+function findElement(arr, value) {
+  const index = arr.findIndex((el) => el === value);
+  return index;
 }
 
 /**
@@ -590,7 +591,7 @@ module.exports = {
   sortDigitNamesByNumericOrder,
   getItemsSum,
   getFalsyValuesCount,
-  findAllOccurrences: findAllOccurrences,
+  findAllOccurrences,
   sortCitiesArray,
   getIdentityMatrix,
   getIntervalArray,
