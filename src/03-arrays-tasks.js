@@ -552,9 +552,9 @@ function distinct(arr) {
  *   }
  */
 function group(array, keySelector, valueSelector) {
-  console.log(keySelector);
   const countries = new Set(array.map(keySelector));
   const temp = [];
+
   Array(...countries.keys()).map((item) => {
     const arr2 = [];
     array.filter((item2) => {
@@ -564,6 +564,7 @@ function group(array, keySelector, valueSelector) {
     temp.push([item, arr2]);
     return countries;
   });
+
   return new Map(temp);
 }
 
