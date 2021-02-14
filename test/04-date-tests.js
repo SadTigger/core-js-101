@@ -57,7 +57,7 @@ describe('04-date-tasks', () => {
   });
 
 
-  it.optional('timeSpanToString should return the string represation of time span between two dates', () => {
+  it.optional('timeSpanToString should return the string representation of time span between two dates', () => {
     [
       {
         startDate: new Date(2000, 1, 1, 10, 0, 0),
@@ -89,7 +89,7 @@ describe('04-date-tasks', () => {
   });
 
 
-  it.optional('angleBetweenClockHands should returns the angle bettween clock hands for specified Greenwich datetime', () => {
+  it.optional('angleBetweenClockHands should returns the angle between clock hands for specified Greenwich datetime', () => {
     [
       {
         date: Date.UTC(2016, 3, 5, 0, 0),
