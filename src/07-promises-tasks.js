@@ -79,8 +79,9 @@ function processAllPromises(array) {
  *    })
  *
  */
-function getFastestPromise(/* array */) {
-  throw new Error('Not implemented');
+function getFastestPromise(array) {
+  // return new Promise.race((resolve, reject) => {});
+  return Promise.race(array);
 }
 
 /**
